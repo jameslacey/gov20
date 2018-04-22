@@ -3,12 +3,12 @@ var techPrefixes =
 	'Mobile',
 	'Web',
 	'Easy',
-	'The New Way To Do',
+	'The New Way To Do ',
 	'Internet',
 	'Inter',
 	'Win',
 	'Super',
-	'A Better Way To Do',
+	'A Better Way To Do ',
 	'Your New',
 ];
 
@@ -40,9 +40,9 @@ function randArr(items) {
 function makeThing() {
     return '<p>&ldquo;It\'s basically <span class="startup">'
 	+ randArr(techPrefixes)
-	+ '</span> <span class="startup">'
+	+ '</span><span class="startup">'
 	+ randArr(ninetiesThings)
-	+ '.</span>&rdquo;</p>';
+	+ ' For The Web.</span>&rdquo;</p>';
 }
 
 $(document).ready(
