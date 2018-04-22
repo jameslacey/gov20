@@ -9,7 +9,7 @@ var techPrefixes =
 	'Win',
 	'Super',
 	'A Better Way To Do ',
-	'Your New',
+	'Your New ',
 ];
 
 var postThings = [];
@@ -26,7 +26,25 @@ var ninetiesThings =
 	'Windows 98',
 	'Microsoft Bob',
 	'Mobile',
+	'Net',
+	'Computing',
+	'Microsoft Bob',
+	'Windows',
     ];
+
+var webThings =
+    [
+	'For the Internet',
+	'For The Web',
+	'With Online Integration',
+	'Online',
+	'Online 2000',
+	'With Web Functionality',
+
+    ];
+
+
+
 
 function rand(num) {
     return Math.floor(Math.random()*num);
@@ -41,8 +59,9 @@ function makeThing() {
     return '<p>&ldquo;It\'s basically <span class="startup">'
 	+ randArr(techPrefixes)
 	+ '</span><span class="startup">'
-	+ randArr(ninetiesThings)
-	+ ' For The Web.</span>&rdquo;</p>';
+	+ randArr(ninetiesThings) 
+	+ randArr(webThings)
+	+ '.</span>&rdquo;</p>';
 }
 
 $(document).ready(
